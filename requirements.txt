@@ -14,3 +14,4 @@ uvicorn
 numpy
 pandas
 matplotlib
+seaborn
