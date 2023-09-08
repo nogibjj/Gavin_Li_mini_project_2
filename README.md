@@ -1,10 +1,11 @@
-# IDS 706 Data Engineering Mini Project 1 [![CI](https://github.com/gli81/de23fa/actions/workflows/ci.yml/badge.svg)](https://github.com/gli81/de23fa/actions/workflows/ci.yml)
+# IDS 706 Data Engineering Mini Project 2
 
-This repo is for Duke MIDS IDS706 Data Engineering course. It contains a Dockerfile that builds a codespace environment and sets up vscode in that environment. A Makefile is also run to perform Github Actions: `make install`, `make test`, `make format`, `make lint`
+
+This repo is for Duke MIDS IDS706 Data Engineering course. The environment was based on the first mini project. 
 
 ## Purpose of the template
 
-This template serves as the base repository for future projects in the class.
+The work in this repo includes descriptive statistical analysis on dataset `ADD LATER`
 
 ## The build process
 
