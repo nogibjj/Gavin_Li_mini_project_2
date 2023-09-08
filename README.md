@@ -1,11 +1,11 @@
-# IDS 706 Data Engineering Mini Project 2
+# IDS 706 Data Engineering Mini Project 2 [![CI](https://github.com/nogibjj/Gavin_Li_mini_project_2/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_mini_project_2/actions/workflows/ci.yml)
 
 
 This repo is for Duke MIDS IDS706 Data Engineering course. The environment was based on the first mini project. 
 
 ## Purpose of the template
 
-The work in this repo includes descriptive statistical analysis on dataset `ADD LATER`
+The work in this repo includes descriptive statistical analysis on dataset [TITANIC from kaggle](https://www.kaggle.com/competitions/titanic/overview)
 
 ## The build process
 
