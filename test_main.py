@@ -5,10 +5,12 @@ TESTS goes here
 """
 
 
-from main import longestSubstring
+from main import get_desc_stats#, general_get_desc
 
-def test_main():
+def test_get_desc_stats():
     # print(longestSubstring("abcdcca"))
-    assert longestSubstring("abcdcca") == 4
+    assert get_desc_stats().loc["count", "PassengerId"] == 891
+    assert round(get_desc_stats().loc["mean", "survived"], 4) == 0.3838
+
 
 # test_main()
