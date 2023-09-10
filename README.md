@@ -35,4 +35,16 @@ calls the following command
 
 `pylint --disable=R,C --ignore-patterns=test_.*?py *.py`
 
-![LintResult](./resources/make_lint.png)
+![LintResult](./resources/make_lint.png)‘
+
+## Descriptive Statistics using Python Pandas
+
+1. Read the csv file at `./dataset/train.csv` using `pandas.read_csv()`
+
+2. Generated summary statistics using `.describe()` method. The result is as follow:
+
+![Summary Statistics](./resources/summ_stats.png)
+
+3. Created histogram using `matplotlib.pyplot.hist()` method, added labels and title to the plot. The result is as follow:
+
+![Histogram](./resources/visualization.png)
