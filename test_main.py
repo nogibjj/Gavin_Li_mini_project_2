@@ -18,18 +18,22 @@ if __name__ == "__main__":
     ## TODO generate summary statistics
     df = read_titanic()
     print(
-        """
-        Below are some summary statistics of variable `Survived` in the Titanic dataset
-        """
+        "Below are some summary statistics of variable `Survived` in the Titanic dataset"
     )
     smm = df.describe(include="all")
-    print({"mean"               :   smm.loc["mean", "Survived"],
-           "median"             :   df["Survived"].median(),
-           "standard deviation" :   smm.loc["std", "Survived"],
-           "maximum"            :   smm.loc["max", "Survived"],
-           "minimum"            :   smm.loc["min", "Survived"]})
+    di = {
+        "mean"                  :   smm.loc["mean", "Survived"],
+        "median"                :   df["Survived"].median(),
+        "standard deviation"    :   smm.loc["std", "Survived"],
+        "maximum"               :   smm.loc["max", "Survived"],
+        "minimum"               :   smm.loc["min", "Survived"]}
+    for k, v in di.items():
+        print(f"{k} : {v}")
 
     ## TODO one visualization
     print("Below is a histogram of variable `Survived` in the Titanic dataset")
     plt.hist(df["Survived"])
+    plt.title("Histogram of Survived")
+    plt.xlabel("Survived")
+    plt.ylabel("Count")
     plt.show()
