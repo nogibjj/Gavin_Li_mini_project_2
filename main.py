@@ -3,10 +3,9 @@
 # import numpy as np
 import pandas as pd
 
-def get_desc_stats():
+def read_titanic():
     df = pd.read_csv("./dataset/train.csv")
-    return df.describe(include="all")
-
+    return df
 
 def general_get_desc(path: "str") -> "pd.DataFrame":
     return pd.read_csv(path).describe()
