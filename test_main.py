@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 
-"""
-TESTS goes here
-"""
-
-
 from main import read_titanic#, general_get_desc
+import matplotlib.pyplot as plt
 
 def test_get_desc_stats():
     # print(longestSubstring("abcdcca"))
@@ -26,6 +22,14 @@ if __name__ == "__main__":
         Below are some summary statistics of variable `Survived` in the Titanic dataset
         """
     )
-    df.describe(include="all")
+    smm = df.describe(include="all")
+    print({"mean"               :   smm.loc["mean", "Survived"],
+           "median"             :   df["Survived"].median(),
+           "standard deviation" :   smm.loc["std", "Survived"],
+           "maximum"            :   smm.loc["max", "Survived"],
+           "minimum"            :   smm.loc["min", "Survived"]})
 
     ## TODO one visualization
+    print("Below is a histogram of variable `Survived` in the Titanic dataset")
+    plt.hist(df["Survived"])
+    plt.show()

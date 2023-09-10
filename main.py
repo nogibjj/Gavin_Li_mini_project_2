@@ -12,8 +12,9 @@ def general_get_desc(path: "str") -> "pd.DataFrame":
 
 
 def main():
-    test = get_desc_stats()
-    print(test.loc["count", "PassengerId"])
+    # test = get_desc_stats()
+    # print(test.loc["count", "PassengerId"])
+    pass
 
 if __name__ == "__main__":
     main()
